@@ -103,3 +103,8 @@ markup:
   goldmark:
     renderer:
       unsafe: true
+
+# cache direcotory
+caches:
+  images:
+    dir: :cacheDir/images
