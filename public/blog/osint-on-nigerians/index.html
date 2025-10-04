@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Finding Femi | OSINT On Nigerians | DAMNSEC</title>
+<meta name="keywords" content="blog, hacking">
+<meta name="description" content="09 Apr 2025 — 5 min read
+&ldquo;Hey, I got your number from a friend. He said I shouldn&rsquo;t tell you he was the one who gave me your number&rdquo;, Whether it&rsquo;s an annoying DM from some random like this, someone threatening you, a scammer, a crazy ex who won&rsquo;t leave you alone, or just out of curiosity–we all want to know who exactly it is we&rsquo;re chatting with over the phone.">
+<meta name="author" content="0xDamian">
+<link rel="canonical" href="https://damnsec.com/blog/osint-on-nigerians/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.85c6ff9febe222f48442e0cb94ce3a9364c6644d81b68becf905357336901553.css" integrity="sha256-hcb/n&#43;viIvSEQuDLlM46k2TGZE2Btovs&#43;QU1czaQFVM=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://damnsec.com/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://damnsec.com/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://damnsec.com/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://damnsec.com/apple-touch-icon.png">
+<link rel="mask-icon" href="https://damnsec.com/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://damnsec.com/blog/osint-on-nigerians/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:url" content="https://damnsec.com/blog/osint-on-nigerians/">
+  <meta property="og:site_name" content="DAMNSEC">
+  <meta property="og:title" content="Finding Femi | OSINT On Nigerians">
+  <meta property="og:description" content="09 Apr 2025 — 5 min read
+“Hey, I got your number from a friend. He said I shouldn’t tell you he was the one who gave me your number”, Whether it’s an annoying DM from some random like this, someone threatening you, a scammer, a crazy ex who won’t leave you alone, or just out of curiosity–we all want to know who exactly it is we’re chatting with over the phone.">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="blog">
+    <meta property="article:published_time" content="2024-04-09T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-04-09T00:00:00+00:00">
+    <meta property="article:tag" content="Blog">
+    <meta property="article:tag" content="Hacking">
+    <meta property="og:image" content="https://damnsec.com/blog/Osint-On-Nigerians/osint-ng-cover.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://damnsec.com/blog/Osint-On-Nigerians/osint-ng-cover.png">
+<meta name="twitter:title" content="Finding Femi | OSINT On Nigerians">
+<meta name="twitter:description" content="09 Apr 2025 — 5 min read
+&ldquo;Hey, I got your number from a friend. He said I shouldn&rsquo;t tell you he was the one who gave me your number&rdquo;, Whether it&rsquo;s an annoying DM from some random like this, someone threatening you, a scammer, a crazy ex who won&rsquo;t leave you alone, or just out of curiosity–we all want to know who exactly it is we&rsquo;re chatting with over the phone.">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Blogs",
+      "item": "https://damnsec.com/blog/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Finding Femi | OSINT On Nigerians",
+      "item": "https://damnsec.com/blog/osint-on-nigerians/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Finding Femi | OSINT On Nigerians",
+  "name": "Finding Femi | OSINT On Nigerians",
+  "description": "09 Apr 2025 — 5 min read\n\u0026ldquo;Hey, I got your number from a friend. He said I shouldn\u0026rsquo;t tell you he was the one who gave me your number\u0026rdquo;, Whether it\u0026rsquo;s an annoying DM from some random like this, someone threatening you, a scammer, a crazy ex who won\u0026rsquo;t leave you alone, or just out of curiosity–we all want to know who exactly it is we\u0026rsquo;re chatting with over the phone.\n",
+  "keywords": [
+    "blog", "hacking"
+  ],
+  "articleBody": "09 Apr 2025 — 5 min read\n“Hey, I got your number from a friend. He said I shouldn’t tell you he was the one who gave me your number”, Whether it’s an annoying DM from some random like this, someone threatening you, a scammer, a crazy ex who won’t leave you alone, or just out of curiosity–we all want to know who exactly it is we’re chatting with over the phone.\nRight now, Gojo is floating over Lagos. He’s looking for some special grade cursed spirit called “Femi”. Apparently, women from all of Nigeria have encountered it (mostly in Lagos) and have warned against it for years. He has the six-eyes to help him find Femi, but we can help. How? Well, we can use…\nOpen-Source Intelligence OSINT, for short, is a practice where you collect publicly available information to complete an objective. When adopted, the usual aim is to find a person.\nWe can use this skill to help Gojo, so let’s get through how it’s done.\nHow would you begin collecting public information about someone who randomly DM’d you? It’s simple really. Scaringly so.\nFirst Step People tend to rely on Truecaller. If you don’t know what Truecaller is, it’s an app that helps identify a caller. But you see, there’s a problem with this app.\nIt’s not exactly a problem with the app per se, it’s the fact that people do not understand how it works. You see, Truecaller does help identify who’s calling, but the truth is it only knows who the caller is because the caller told Truecaller who they were.\nWhat I mean is, that upon registering on Truecaller, people are often compelled to use their legal name, given the registration process. What they do not know is you do not have to do that. You can use an alias.\nThe image above shows what you would see if you searched one of my numbers—an alias.\nFor this reason alone, Truecaller isn’t all that reliable.\nSo what could we use to guarantee or nearly guarantee that we see the correct name of the person?\nMobile Money Operators Yup, your Opay, and Palmpay alike. This should be obvious, but it turns out that not many people think of these as OSINT tools. They just use it to pay the Instagram scam vendor and go on with their day.\nThe thing is, a lot of people use Opay now. Since traditional banking services are as efficient as using a pigeon to send messages, we’ve come to leave them behind and move on to M.M.Os. And since that’s the case, why not use that to find out who you’re talking to? Unconventional, but that’s the point of this blog. We’ll use not-so-known “tools” to work for us. So, what else?\nMy Airtel App This one isn’t well known, but it works for Airtel numbers. This is how it’s done.\nOn the My Airtel app, click on the ‘Recharge’ or ‘Buy Bundles’ option and type in an Airtel number in the input field. That’s it. This would give you the name of the person who registered the SIM. Image below is an example using my sister’s number.\nDo you see how much info you can get just by doing these? It’s incredible.\nBut OSINT isn’t just about getting a name, however, I understand how important names are, there’s a lot more you could do the more you know about the person. How about finding out what phone model the person is using?\nWhatsApp I bet you didn’t see this one coming. You can use WhatsApp to find the model of someone’s phone. This could help you narrow down the person’s interests. Once again, the more you know about the target, the better. I mean, I wanna know what phone Femi is using to terrorise our women too. How’s it done, though? It’s easy. Get another WhatsApp app (probably business or the normal one if you have WhatsApp business) or WhatsApp on another phone and then try to login with the person’s number. Sure, this would alert the person that someone is attempting to login, but you get the information you want. Image below tested with my WhatsApp number.\nIt’s one of those things you just don’t think of. It’s amazing.\nWhat About Email OSINT? Sometimes, you get the email of the person Or just the username. I have grown to really like a tool called Blackbird and it’s interesting what this thing can pull up.\nBlackbird results after testing on my email\nOf course, it’s not the only tool I use. There’s another one called Ghunt. This only works for Gmail, however, unlike Blackbird.\nEven with just a username, Blackbird is quite effective.\nBlackbird result after testing my alias\nNow, you know I’m interested in Programming, learning languages that have nothing to do with me, Chess, Hacking (duh), etc. While it’s not entirely accurate, you can see that it’s good enough.\nNB: Blackbird also has an AI feature that I will test and update this blog with.\nMISC The rest of this article could be me yapping about common methods, but I’ll just gloss over ’em.\nOnce I’ve got a name, the next thing I do is check that name on Google. Then check Facebook and LinkedIn. Maybe Twitter too, but less likely to bring results compared to the other two sources. You could also do this with a number, but do this on Twitter. There’s a nice chance the target has posted their Opay/Palmpay banking details on there for some giveaway or something.\nThere’s also image OSINT. You could use Google Lens or Yandex to search for a face. But faces aren’t the only thing to look for in images. You could use that to find the location, judging from what’s in the image and also extract Metadata using the CLI tool called exiftool.\nDisclaimer While this would be really useful in helping Gojo find Femi the special-grade cursed spirit, it’d be quite annoying to find people using this knowledge to bully/scare innocent people into doing stuff. I have withheld some cheeky tricks, but I might update this blog with them one day.\nAct responsibly and have fun finding Femi! Fin.\n",
+  "wordCount" : "1035",
+  "inLanguage": "en",
+  "image":"https://damnsec.com/blog/Osint-On-Nigerians/osint-ng-cover.png","datePublished": "2024-04-09T00:00:00Z",
+  "dateModified": "2024-04-09T00:00:00Z",
+  "author":{
+    "@type": "Person",
+    "name": "0xDamian"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://damnsec.com/blog/osint-on-nigerians/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "DAMNSEC",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://damnsec.com/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header sticky-header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://damnsec.com/" accesskey="h" title="DAMNSEC (Alt + H)">DAMNSEC</a>
+            <span class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+                <ul class="lang-switch"><li>|</li>
+                </ul>
+            </span>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://damnsec.com/" title="Home">
+                    <span>Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://damnsec.com/about" title="About Me">
+                    <span>About Me</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://damnsec.com/blog" title="Blog">
+                    <span>Blog</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://damnsec.com/audits" title="Audits">
+                    <span>Audits</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://damnsec.com/experience" title="Experience">
+                    <span>Experience</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://damnsec.com/search" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://damnsec.com/">Home</a>&nbsp;»&nbsp;<a href="https://damnsec.com/blog/">Blogs</a></div>
+    <h1 class="post-title entry-hint-parent">
+      Finding Femi | OSINT On Nigerians
+    </h1>
+    <div class="post-meta">
+
+0xDamian
+
+</div>
+  </header> 
+<figure class="entry-cover">
+        <img loading="eager" src="https://damnsec.com/blog/Osint-On-Nigerians/osint-ng-cover.png" alt="">
+        
+</figure><div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">‎ Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#open-source-intelligence" aria-label="Open-Source Intelligence">Open-Source Intelligence</a></li>
+                <li>
+                    <a href="#first-step" aria-label="First Step">First Step</a></li>
+                <li>
+                    <a href="#mobile-money-operators" aria-label="Mobile Money Operators">Mobile Money Operators</a></li>
+                <li>
+                    <a href="#my-airtel-app" aria-label="My Airtel App">My Airtel App</a></li>
+                <li>
+                    <a href="#whatsapp" aria-label="WhatsApp">WhatsApp</a></li>
+                <li>
+                    <a href="#what-about-email-osint" aria-label="What About Email OSINT?">What About Email OSINT?</a></li>
+                <li>
+                    <a href="#misc" aria-label="MISC">MISC</a></li>
+                <li>
+                    <a href="#disclaimer" aria-label="Disclaimer">Disclaimer</a>
+                </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><p>09 Apr 2025 — 5 min read</p>
+<p>&ldquo;Hey, I got your number from a friend. He said I shouldn&rsquo;t tell you he was the one who gave me your number&rdquo;, Whether it&rsquo;s an annoying DM from some random like this, someone threatening you, a scammer, a crazy ex who won&rsquo;t leave you alone, or just out of curiosity–we all want to know who exactly it is we&rsquo;re chatting with over the phone.</p>
+<p>Right now, Gojo is floating over Lagos. He&rsquo;s looking for some special grade cursed spirit called &ldquo;Femi&rdquo;. Apparently, women from all of Nigeria have encountered it (mostly in Lagos) and have warned against it for years. He has the six-eyes to help him find Femi, but we can help. How? Well, we can use&hellip;</p>
+<h2 id="open-source-intelligence">Open-Source Intelligence<a hidden class="anchor" aria-hidden="true" href="#open-source-intelligence">#</a></h2>
+<p><img loading="lazy" src="https://www.damnsec.com/content/images/2025/02/anime-read-cf98ad36e659b843.gif"></p>
+<p>OSINT, for short, is a practice where you collect <em>publicly available</em> information to complete an objective. When adopted, the usual aim is to find a person.</p>
+<p>We can use this skill to help Gojo, so let&rsquo;s get through how it&rsquo;s done.<br>
+How would you begin collecting public information about someone who randomly DM&rsquo;d you? It&rsquo;s simple really. Scaringly so.</p>
+<h2 id="first-step">First Step<a hidden class="anchor" aria-hidden="true" href="#first-step">#</a></h2>
+<p><img loading="lazy" src="https://www.damnsec.com/content/images/2025/02/tanjiro-looking-at-phone-disgusted-ad85dc2af36be484.png"></p>
+<p>People tend to rely on Truecaller. If you don&rsquo;t know what Truecaller is, it&rsquo;s an app that helps identify a caller. But you see, there&rsquo;s a problem with this app.<br>
+It&rsquo;s not exactly a problem with the app per se, it&rsquo;s the fact that people do not understand how it works. You see, Truecaller does help identify who&rsquo;s calling, but the truth is it only knows who the caller is because the caller told Truecaller who they were.</p>
+<p>What I mean is, that upon registering on Truecaller, people are often compelled to use their legal name, given the registration process. What they do not know is you do not have to do that. You can use an alias.</p>
+<p><img loading="lazy" src="https://www.damnsec.com/content/images/2025/02/image-8f46a11b314cbc6f.png"></p>
+<p>The image above shows what you would see if you searched one of my numbers—an alias.<br>
+For this reason alone, Truecaller isn&rsquo;t all that reliable.<br>
+So what could we use to guarantee or nearly guarantee that we see the correct name of the person?</p>
+<h2 id="mobile-money-operators">Mobile Money Operators<a hidden class="anchor" aria-hidden="true" href="#mobile-money-operators">#</a></h2>
+<p><img loading="lazy" src="https://www.damnsec.com/content/images/2025/04/image.png"></p>
+<p>Yup, your Opay, and Palmpay alike. This should be obvious, but it turns out that not many people think of these as OSINT tools. They just use it to pay the Instagram scam vendor and go on with their day.<br>
+The thing is, a lot of people use Opay now. Since traditional banking services are as efficient as using a pigeon to send messages, we&rsquo;ve come to leave them behind and move on to M.M.Os. And since that&rsquo;s the case, why not use that to find out who you&rsquo;re talking to? Unconventional, but that&rsquo;s the point of this blog. We&rsquo;ll use not-so-known &ldquo;tools&rdquo; to work for us. So, what else?</p>
+<h2 id="my-airtel-app">My Airtel App<a hidden class="anchor" aria-hidden="true" href="#my-airtel-app">#</a></h2>
+<p><img loading="lazy" src="https://www.damnsec.com/content/images/2025/04/image-1.png"></p>
+<p>This one isn&rsquo;t well known, but it works for Airtel numbers. This is how it&rsquo;s done.<br>
+On the My Airtel app, click on the &lsquo;Recharge&rsquo; or &lsquo;Buy Bundles&rsquo; option and type in an Airtel number in the input field. That&rsquo;s it. This would give you the name of the person who registered the SIM. Image below is an example using my sister&rsquo;s number.</p>
+<p><img loading="lazy" src="https://www.damnsec.com/content/images/2025/04/image-2.png"></p>
+<p>Do you see how much info you can get just by doing these? It&rsquo;s incredible.</p>
+<p>But OSINT isn&rsquo;t just about getting a name, however, I understand how important names are, there&rsquo;s a lot more you could do the more you know about the person. How about finding out what phone model the person is using?</p>
+<h2 id="whatsapp">WhatsApp<a hidden class="anchor" aria-hidden="true" href="#whatsapp">#</a></h2>
+<p><img loading="lazy" src="https://www.damnsec.com/content/images/2025/04/image-3.png"></p>
+<p>I bet you didn&rsquo;t see this one coming. You can use WhatsApp to find the model of someone&rsquo;s phone. This could help you narrow down the person&rsquo;s interests. Once again, the more you know about the target, the better. I mean, I wanna know what phone Femi is using to terrorise our women too. How&rsquo;s it done, though? It&rsquo;s easy. Get another WhatsApp app (probably business or the normal one if you have WhatsApp business) or WhatsApp on another phone and then try to login with the person&rsquo;s number. Sure, this would alert the person that someone is attempting to login, but you get the information you want. Image below tested with my WhatsApp number.</p>
+<p><img loading="lazy" src="https://www.damnsec.com/content/images/2025/04/image-4.png"></p>
+<p>It&rsquo;s one of those things you just don&rsquo;t think of. It&rsquo;s amazing.</p>
+<h2 id="what-about-email-osint">What About Email OSINT?<a hidden class="anchor" aria-hidden="true" href="#what-about-email-osint">#</a></h2>
+<p>Sometimes, you get the email of the person Or just the username. I have grown to really like a tool called <a href="https://github.com/p1ngul1n0/blackbird?ref=damnsec.com">Blackbird</a> and it&rsquo;s interesting what this thing can pull up.</p>
+<p><img loading="lazy" src="https://www.damnsec.com/content/images/2025/04/image-5.png">
+Blackbird results after testing on my email</p>
+<p>Of course, it&rsquo;s not the only tool I use. There&rsquo;s another one called <a href="https://github.com/mxrch/GHunt?ref=damnsec.com">Ghunt</a>. This only works for Gmail, however, unlike Blackbird.</p>
+<p>Even with just a username, Blackbird is quite effective.</p>
+<p><img loading="lazy" src="https://www.damnsec.com/content/images/2025/04/image-6.png">
+Blackbird result after testing my alias</p>
+<p>Now, you know I&rsquo;m interested in Programming, learning languages that have nothing to do with me, Chess, Hacking (duh), etc. While it&rsquo;s not entirely accurate, you can see that it&rsquo;s good enough.<br>
+<em>NB: Blackbird also has an AI feature that I will test and update this blog with.</em></p>
+<h2 id="misc">MISC<a hidden class="anchor" aria-hidden="true" href="#misc">#</a></h2>
+<p>The rest of this article could be me yapping about common methods, but I&rsquo;ll just gloss over &rsquo;em.<br>
+Once I&rsquo;ve got a name, the next thing I do is check that name on Google. Then check Facebook and LinkedIn. Maybe Twitter too, but less likely to bring results compared to the other two sources. You could also do this with a number, but do this on Twitter. There&rsquo;s a nice chance the target has posted their Opay/Palmpay banking details on there for some giveaway or something.</p>
+<p>There&rsquo;s also image OSINT. You could use Google Lens or Yandex to search for a face. But faces aren&rsquo;t the only thing to look for in images. You could use that to find the location, judging from what&rsquo;s in the image and also extract Metadata using the CLI tool called <code>exiftool</code>.</p>
+<h2 id="disclaimer">Disclaimer<a hidden class="anchor" aria-hidden="true" href="#disclaimer">#</a></h2>
+<p>While this would be really useful in helping Gojo find Femi the special-grade cursed spirit, it&rsquo;d be quite annoying to find people using this knowledge to bully/scare innocent people into doing stuff. I have withheld some cheeky tricks, but I might update this blog with them one day.<br>
+Act responsibly and have fun finding Femi! Fin.</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://damnsec.com/tags/blog/">Blog</a></li>
+      <li><a href="https://damnsec.com/tags/hacking/">Hacking</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2025 <a href="https://damnsec.com/">DAMNSEC</a></span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

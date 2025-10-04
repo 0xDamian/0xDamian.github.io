@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Cybersecurity on DAMNSEC</title>
+    <link>https://damnsec.com/tags/cybersecurity/</link>
+    <description>Recent content in Cybersecurity on DAMNSEC</description>
+    <generator>Hugo -- 0.150.1</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 01 Apr 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://damnsec.com/tags/cybersecurity/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Finding Femi | OSINT On Nigerians</title>
+      <link>https://damnsec.com/blog/get-started-in-cybersecurity/</link>
+      <pubDate>Mon, 01 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>https://damnsec.com/blog/get-started-in-cybersecurity/</guid>
+      <description>&lt;p&gt;Alright, fellas, I&amp;rsquo;ve never been asked a more repetitive question before. It&amp;rsquo;s always &amp;ldquo;How can I break into Cybersecurity&amp;rdquo; and never &amp;ldquo;How is Damian doing&amp;rdquo;. I get asked how to break into this field more times than I&amp;rsquo;ve seen the rise of the sun.&lt;br&gt;
+This is why I have created this guide. It&amp;rsquo;s notes taken from my personal experience and advice from more experienced professionals in the field, resources listed here are also free!&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

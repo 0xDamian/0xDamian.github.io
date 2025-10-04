@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Finding Femi | OSINT On Nigerians | DAMNSEC</title>
+<meta name="keywords" content="blog, hacking, cybersecurity">
+<meta name="description" content="Alright, fellas, I&rsquo;ve never been asked a more repetitive question before. It&rsquo;s always &ldquo;How can I break into Cybersecurity&rdquo; and never &ldquo;How is Damian doing&rdquo;. I get asked how to break into this field more times than I&rsquo;ve seen the rise of the sun.
+This is why I have created this guide. It&rsquo;s notes taken from my personal experience and advice from more experienced professionals in the field, resources listed here are also free!">
+<meta name="author" content="0xDamian">
+<link rel="canonical" href="https://damnsec.com/blog/get-started-in-cybersecurity/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.85c6ff9febe222f48442e0cb94ce3a9364c6644d81b68becf905357336901553.css" integrity="sha256-hcb/n&#43;viIvSEQuDLlM46k2TGZE2Btovs&#43;QU1czaQFVM=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://damnsec.com/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://damnsec.com/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://damnsec.com/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://damnsec.com/apple-touch-icon.png">
+<link rel="mask-icon" href="https://damnsec.com/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://damnsec.com/blog/get-started-in-cybersecurity/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:url" content="https://damnsec.com/blog/get-started-in-cybersecurity/">
+  <meta property="og:site_name" content="DAMNSEC">
+  <meta property="og:title" content="Finding Femi | OSINT On Nigerians">
+  <meta property="og:description" content="Alright, fellas, I’ve never been asked a more repetitive question before. It’s always “How can I break into Cybersecurity” and never “How is Damian doing”. I get asked how to break into this field more times than I’ve seen the rise of the sun.
+This is why I have created this guide. It’s notes taken from my personal experience and advice from more experienced professionals in the field, resources listed here are also free!">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="blog">
+    <meta property="article:published_time" content="2024-04-01T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-04-01T00:00:00+00:00">
+    <meta property="article:tag" content="Blog">
+    <meta property="article:tag" content="Hacking">
+    <meta property="article:tag" content="Cybersecurity">
+    <meta property="og:image" content="https://damnsec.com/blog/Start-Cyber/start-cyber.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://damnsec.com/blog/Start-Cyber/start-cyber.png">
+<meta name="twitter:title" content="Finding Femi | OSINT On Nigerians">
+<meta name="twitter:description" content="Alright, fellas, I&rsquo;ve never been asked a more repetitive question before. It&rsquo;s always &ldquo;How can I break into Cybersecurity&rdquo; and never &ldquo;How is Damian doing&rdquo;. I get asked how to break into this field more times than I&rsquo;ve seen the rise of the sun.
+This is why I have created this guide. It&rsquo;s notes taken from my personal experience and advice from more experienced professionals in the field, resources listed here are also free!">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Blogs",
+      "item": "https://damnsec.com/blog/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Finding Femi | OSINT On Nigerians",
+      "item": "https://damnsec.com/blog/get-started-in-cybersecurity/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Finding Femi | OSINT On Nigerians",
+  "name": "Finding Femi | OSINT On Nigerians",
+  "description": "Alright, fellas, I\u0026rsquo;ve never been asked a more repetitive question before. It\u0026rsquo;s always \u0026ldquo;How can I break into Cybersecurity\u0026rdquo; and never \u0026ldquo;How is Damian doing\u0026rdquo;. I get asked how to break into this field more times than I\u0026rsquo;ve seen the rise of the sun.\nThis is why I have created this guide. It\u0026rsquo;s notes taken from my personal experience and advice from more experienced professionals in the field, resources listed here are also free!\n",
+  "keywords": [
+    "blog", "hacking", "cybersecurity"
+  ],
+  "articleBody": "Alright, fellas, I’ve never been asked a more repetitive question before. It’s always “How can I break into Cybersecurity” and never “How is Damian doing”. I get asked how to break into this field more times than I’ve seen the rise of the sun.\nThis is why I have created this guide. It’s notes taken from my personal experience and advice from more experienced professionals in the field, resources listed here are also free!\nBaby Steps First Look, the thing about Cybersecurity, like any other career path is you can’t skip the basics.\nComputer Basics\nThis is just understanding how to use a computer at the very least. In this day and age, everyone can, but can you USE a computer?\nWhat I mean is, that using a computer to watch anime or play a game amongst other “normal” things, puts you in the category of the average consumer.\nA particular resource to get you ahead of the normies would be Professor Messer’s CompTIA A+ YouTube series. It’s free and will teach you the basics of computer Hardware, Software, Troubleshooting and so on.\nNetworking This is the oxygen to your hydrogens. It’s essential to make your understanding of Cybersecurity concepts flow like water.\nTo understand why you have to do Cybersecurity in the first place, you have to understand the way computers communicate, which is what Networking is about. You can learn the basics using the following resources:\n1. Professor Messer’s Network+ free YouTube series\n2. NetAcad Network Basics\nLinux Windows systems dominate the consumer market. Y’know, the normies, but other operating systems (OS) exist like the MacOS, and a core focus in the Cybersecurity industry, Linux operating systems.\nWhile Windows systems and MacBooks dominate the consumer market (yeah, the normies), Linux dominates somewhere else; the Internet. A vast majority of the internet runs on a Linux-based operating system and a lot of the tools used by Cybersecurity professionals are found in Linux systems as well.\nWhile any of the mentioned OSs could perform well for a Cybersecurity professional, I find Linux to be much easier to use.\nHere are resources you can learn Linux from:\n1. LinuxJourney\n2. FreeCodeCamp Intro To Linux YouTube Playlist\nCybersecurity Concepts/Practices Understanding what the deal is with Cybersecurity shouldn’t have to be mentioned, but let me properly direct you to the recommended resources:\n1. TryHackMe’s Intro to Cybersecurity path\n2. Professor Messer’s Security+ YouTube series\nProgramming (Just a lil 🤏🏾👀) ",
+  "wordCount" : "909",
+  "inLanguage": "en",
+  "image":"https://damnsec.com/blog/Start-Cyber/start-cyber.png","datePublished": "2024-04-01T00:00:00Z",
+  "dateModified": "2024-04-01T00:00:00Z",
+  "author":{
+    "@type": "Person",
+    "name": "0xDamian"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://damnsec.com/blog/get-started-in-cybersecurity/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "DAMNSEC",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://damnsec.com/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header sticky-header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://damnsec.com/" accesskey="h" title="DAMNSEC (Alt + H)">DAMNSEC</a>
+            <span class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+                <ul class="lang-switch"><li>|</li>
+                </ul>
+            </span>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://damnsec.com/" title="Home">
+                    <span>Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://damnsec.com/about" title="About Me">
+                    <span>About Me</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://damnsec.com/blog" title="Blog">
+                    <span>Blog</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://damnsec.com/audits" title="Audits">
+                    <span>Audits</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://damnsec.com/experience" title="Experience">
+                    <span>Experience</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://damnsec.com/search" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://damnsec.com/">Home</a>&nbsp;»&nbsp;<a href="https://damnsec.com/blog/">Blogs</a></div>
+    <h1 class="post-title entry-hint-parent">
+      Finding Femi | OSINT On Nigerians
+    </h1>
+    <div class="post-meta">
+
+0xDamian
+
+</div>
+  </header> 
+<figure class="entry-cover">
+        <img loading="eager" src="https://damnsec.com/blog/Start-Cyber/start-cyber.png" alt="">
+        
+</figure><div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">‎ Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#baby-steps-first" aria-label="Baby Steps First">Baby Steps First</a><ul>
+                        
+                <li>
+                    <a href="#networking" aria-label="Networking">Networking</a></li>
+                <li>
+                    <a href="#linux" aria-label="Linux">Linux</a></li>
+                <li>
+                    <a href="#cybersecurity-conceptspractices" aria-label="Cybersecurity Concepts/Practices">Cybersecurity Concepts/Practices</a></li>
+                <li>
+                    <a href="#programming-just-a-lil-" aria-label="Programming (Just a lil 🤏🏾👀)">Programming (Just a lil 🤏🏾👀)</a></li>
+                <li>
+                    <a href="#find-your-niche" aria-label="Find Your Niche">Find Your Niche</a></li>
+                <li>
+                    <a href="#get-certified" aria-label="Get Certified">Get Certified</a></li>
+                <li>
+                    <a href="#faq" aria-label="FAQ">FAQ</a>
+                </li>
+            </ul>
+            </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><p>Alright, fellas, I&rsquo;ve never been asked a more repetitive question before. It&rsquo;s always &ldquo;How can I break into Cybersecurity&rdquo; and never &ldquo;How is Damian doing&rdquo;. I get asked how to break into this field more times than I&rsquo;ve seen the rise of the sun.<br>
+This is why I have created this guide. It&rsquo;s notes taken from my personal experience and advice from more experienced professionals in the field, resources listed here are also free!</p>
+<h2 id="baby-steps-first">Baby Steps First<a hidden class="anchor" aria-hidden="true" href="#baby-steps-first">#</a></h2>
+<p><img alt="Go baby! Go!! | Anime baby, Anime child, Anime art beautiful" loading="lazy" src="https://i.pinimg.com/originals/20/09/0f/20090faa334a79bbe2a22365ea28a9d6.gif"></p>
+<p>Look, the thing about Cybersecurity, like any other career path is <strong>you can&rsquo;t skip the basics</strong>.</p>
+<p><strong>Computer Basics</strong></p>
+<p><img alt="New trending GIF tagged anime computer tired wednesday… | Trending Gifs" loading="lazy" src="https://media2.giphy.com/media/jAe22Ec5iICCk/giphy.gif"></p>
+<p>This is just understanding how to use a computer at the very least. In this day and age, everyone can, but can you USE a computer?<br>
+What I mean is, that using a computer to watch anime or play a game amongst other &ldquo;normal&rdquo; things, puts you in the category of the average consumer.<br>
+A particular resource to get you ahead of the normies would be <a href="https://www.professormesser.com/professor-messer-archives/220-1001/220-1000-training-course/?ref=damnsec.com">Professor Messer&rsquo;s CompTIA A+</a> YouTube series. It&rsquo;s free and will teach you the basics of computer Hardware, Software, Troubleshooting and so on.</p>
+<h3 id="networking">Networking<a hidden class="anchor" aria-hidden="true" href="#networking">#</a></h3>
+<p><img alt="Let&rsquo;s Get Nostalgic with Classic Anime Technology! | J-List Blog" loading="lazy" src="https://blog.jlist.com/wp-content/uploads/2020/01/lain-computers.gif"></p>
+<p>This is the oxygen to your hydrogens. It&rsquo;s essential to make your understanding of Cybersecurity concepts flow like water.<br>
+To understand why you have to do Cybersecurity in the first place, you have to understand the way computers communicate, which is what Networking is about. You can learn the basics using the following resources:<br>
+1. <a href="https://www.professormesser.com/get-network-plus-certified/?ref=damnsec.com">Professor Messer&rsquo;s Network+ free YouTube series</a><br>
+2. <a href="https://skillsforall.com/course/networking-basics?courseLang=en-US&amp;ref=damnsec.com">NetAcad Network Basics</a></p>
+<h3 id="linux">Linux<a hidden class="anchor" aria-hidden="true" href="#linux">#</a></h3>
+<p><img alt="Some Anime gifs on Tumblr: Penguin highway" loading="lazy" src="https://64.media.tumblr.com/f8770224d064f4e8b0029c93fa196cb9/2d316da0c62d2104-8d/s540x810/354c6bf106008aa208f913850a6911610a989273.gif"></p>
+<p><strong>Windows</strong> systems dominate the consumer market. Y&rsquo;know, the normies, but other operating systems (OS) exist like the <strong>MacOS,</strong> and a core focus in the Cybersecurity industry, <strong>Linux</strong> operating systems.<br>
+While Windows systems and MacBooks dominate the consumer market (yeah, the normies), Linux dominates somewhere else; the Internet. A vast majority of the internet runs on a Linux-based operating system and a lot of the tools used by Cybersecurity professionals are found in Linux systems as well.<br>
+While any of the mentioned OSs could perform well for a Cybersecurity professional, I find Linux to be much easier to use.<br>
+Here are resources you can learn Linux from:<br>
+1. <a href="https://linuxjourney.com/?ref=damnsec.com">LinuxJourney</a><br>
+2. <a href="https://www.youtube.com/watch?v=sWbUDq4S6Y8&amp;ref=damnsec.com">FreeCodeCamp Intro To Linux YouTube Playlist</a></p>
+<h3 id="cybersecurity-conceptspractices">Cybersecurity Concepts/Practices<a hidden class="anchor" aria-hidden="true" href="#cybersecurity-conceptspractices">#</a></h3>
+<p><img alt="Anime+Cyberpunk.gif (500×269) | Cyberpunk anime, Cyberpunk, Anime" loading="lazy" src="https://i.pinimg.com/originals/ca/bd/8b/cabd8bdddc0e14a889b79644ca70ad21.gif"></p>
+<p>Understanding what the deal is with Cybersecurity shouldn&rsquo;t have to be mentioned, but let me properly direct you to the recommended resources:<br>
+1. <a href="https://tryhackme.com/path/outline/introtocyber?ref=damnsec.com">TryHackMe&rsquo;s Intro to Cybersecurity path</a><br>
+2. <a href="https://www.professormesser.com/get-security-plus-certified/?ref=damnsec.com">Professor Messer&rsquo;s Security+ YouTube series</a></p>
+<h3 id="programming-just-a-lil-">Programming (Just a lil 🤏🏾👀)<a hidden class="anchor" aria-hidden="true" href="#programming-just-a-lil-">#</a></h3>
+<p><img alt="Who are you?&quot; &ldquo;I&rsquo;m a Detective&rdquo; &ldquo;Why is the ability call that?&rdquo; …  #fanfiction #Fanfiction #amreading #books #wattpad | Anime, Anime girl,  Programmer girl" loading="lazy" src="https://i.pinimg.com/originals/e1/85/18/e18518c6d24257c6fb02e3c95a862d85.gif"></p>
+<p>I understand that a lot of people want to avoid this, but please don&rsquo;t. Especially if you want to get into a technical role in the industry. In my experience, I have noticed how much programming becomes quite relevant as I advance in my career.<br>
+That said, you don&rsquo;t have to become some super programmer. The least you should be able to do is read code and write small scripts to make your workload lighter through automation.<br>
+Speaking of automation, I recommend that you learn Python and BASH (some HTML and JavaScript wouldn&rsquo;t hurt). Program small projects to get the hang of it. It also looks great on your resume/portfolio.</p>
+<p>Where to learn?<br>
+1. <a href="https://www.youtube.com/watch?v=rfscVS0vtbw&amp;t=6s&amp;ref=damnsec.com">FreeCodeCamp</a><br>
+2. <a href="https://guide.bash.academy/?ref=damnsec.com">BASH Academy</a></p>
+<p>Done with the basics? Let&rsquo;s&hellip;</p>
+<h3 id="find-your-niche">Find Your Niche<a hidden class="anchor" aria-hidden="true" href="#find-your-niche">#</a></h3>
+<p><img loading="lazy" src="https://www.damnsec.com/content/images/2024/04/data-src-image-0fdd7d7e-85bf-4428-ae17-3805186fa101.png"></p>
+<p>You&rsquo;ve found out about Cybersecurity and chances are, you want to become a hacker. It sounds fun, doesn&rsquo;t it? Let&rsquo;s&hellip;back up a little.<br>
+There are numerous Cybersecurity paths, it&rsquo;s quite ridiculous.<br>
+We&rsquo;ve got Pentesting, GRC, Red Teaming, Blue Teaming, Purple Teaming, Technical Writing, Cybersecurity Engineering, SOC Analysis, Cybersecurity Sales, and that&rsquo;s just scratching the surface.<br>
+The large amount of roles may be daunting and it can be hard to figure out which one you want, but here&rsquo;s how you could do it:</p>
+<p>Research.</p>
+<p>Yup, you have to do some research on what these various roles mean. How I would do it is simply Google it and then see if there are videos about the role. I&rsquo;d listen to professionals about what it takes to work in that role, such as skillset and activities and then I would build on it by practicing. Worked out fine for me.</p>
+<p>Another thing is to figure out if you like technical roles or non-technical roles. This helps narrow down the ideal job type for you.</p>
+<p>Wanna get hired now? Of course, you do. But first, you need to&hellip;</p>
+<h3 id="get-certified">Get Certified<a hidden class="anchor" aria-hidden="true" href="#get-certified">#</a></h3>
+<p><img alt="mumen rider thumbs up - Simply Binge" loading="lazy" src="https://simplybinge.com/wp-content/uploads/2015/12/mumen-rider-thumbs-up.gif"></p>
+<p>For each role, there are several industry-standard certifications and there are general certificates as well (regardless of the role). These certificates, depending on where you&rsquo;re from and the level of difficulty of the exam would typically dictate how pricy it would be.<br>
+These general certs are:<br>
+1. CompTIA Security+<br>
+2. CompTIA Network+<br>
+3. CompTIA Cysa+<br>
+4. CEH (Not a fan)<br>
+5. eJPT<br>
+6. OSCP<br>
+7. PNPT</p>
+<p>These certs appear a lot in job descriptions and make your chances of getting an interview much more likely (not certain).</p>
+<hr>
+<h3 id="faq">FAQ<a hidden class="anchor" aria-hidden="true" href="#faq">#</a></h3>
+<p><img alt="7 Anime-Related Questions That Are Strangely Difficult To Answer" loading="lazy" src="https://animemotivation.com/wp-content/uploads/2017/10/anime-girl-thinking.gif"></p>
+<p>Q: Do you need a degree to get a job?<br>
+A: In some cases, you do. At the moment, I have a job in Cybersecurity and do not have my degree yet, nor has being a student helped. Many get jobs without a degree, so don&rsquo;t lose hope.</p>
+<p>Q: Do you need to learn programming to get into cybersecurity?<br>
+A: Depending on context, no. I have already explained this above.</p>
+<p>Q: What is the pay range of a Cybersecurity professional?<br>
+A: It varies per region, company budget, and your level of experience. You could do some research to get an idea of it.</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://damnsec.com/tags/blog/">Blog</a></li>
+      <li><a href="https://damnsec.com/tags/hacking/">Hacking</a></li>
+      <li><a href="https://damnsec.com/tags/cybersecurity/">Cybersecurity</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2025 <a href="https://damnsec.com/">DAMNSEC</a></span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

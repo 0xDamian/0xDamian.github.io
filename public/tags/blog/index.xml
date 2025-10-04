@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Blog on DAMNSEC</title>
+    <link>https://damnsec.com/tags/blog/</link>
+    <description>Recent content in Blog on DAMNSEC</description>
+    <generator>Hugo -- 0.150.1</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 23 May 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://damnsec.com/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How To Become A Hacker</title>
+      <link>https://damnsec.com/blog/become-a-hacker/</link>
+      <pubDate>Thu, 23 May 2024 00:00:00 +0000</pubDate>
+      <guid>https://damnsec.com/blog/become-a-hacker/</guid>
+      <description>&lt;p&gt;You&amp;rsquo;re trying to learn the art of exploitation, the way of &lt;code&gt;0&lt;/code&gt; and &lt;code&gt;1&lt;/code&gt;, and have the esoteric knowledge to bend the internet to your will, juiced on energy drinks and dressed in a hoodie in a room so dark the only ray of light in there is green text emanating from your PC screen&amp;hellip;just to be used as your household&amp;rsquo;s IT technician?&lt;/p&gt;
+&lt;p&gt;I have just the thing for you in this blog—a path filled with pain, and excitement–a never-ending journey of learning &amp;amp; discovery.&lt;br&gt;
+Let&amp;rsquo;s become hackers, ethically of course.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Finding Femi | OSINT On Nigerians</title>
+      <link>https://damnsec.com/blog/osint-on-nigerians/</link>
+      <pubDate>Tue, 09 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>https://damnsec.com/blog/osint-on-nigerians/</guid>
+      <description>&lt;p&gt;09 Apr 2025 — 5 min read&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;Hey, I got your number from a friend. He said I shouldn&amp;rsquo;t tell you he was the one who gave me your number&amp;rdquo;, Whether it&amp;rsquo;s an annoying DM from some random like this, someone threatening you, a scammer, a crazy ex who won&amp;rsquo;t leave you alone, or just out of curiosity–we all want to know who exactly it is we&amp;rsquo;re chatting with over the phone.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Finding Femi | OSINT On Nigerians</title>
+      <link>https://damnsec.com/blog/get-started-in-cybersecurity/</link>
+      <pubDate>Mon, 01 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>https://damnsec.com/blog/get-started-in-cybersecurity/</guid>
+      <description>&lt;p&gt;Alright, fellas, I&amp;rsquo;ve never been asked a more repetitive question before. It&amp;rsquo;s always &amp;ldquo;How can I break into Cybersecurity&amp;rdquo; and never &amp;ldquo;How is Damian doing&amp;rdquo;. I get asked how to break into this field more times than I&amp;rsquo;ve seen the rise of the sun.&lt;br&gt;
+This is why I have created this guide. It&amp;rsquo;s notes taken from my personal experience and advice from more experienced professionals in the field, resources listed here are also free!&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

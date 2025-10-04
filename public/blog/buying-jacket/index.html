@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>How To Become A Hacker | DAMNSEC</title>
+<meta name="keywords" content="blog, hacking">
+<meta name="description" content="Web Exploitation
+Buying A $1,300 Jacket With $0 In Credit
+
+0xDamian
+03 Apr 2024 — 4 min read
+
+CLICK-BAIT, BOZO 🫵🏾💀I&rsquo;m not a thief.
+This was done in a controlled environment, a place where you can practice your web application hacking skills, Portswigger Academy.
+In this API lab, I was able to utilise Burpsuite to capture requests and abuse an unused API endpoint. Let&rsquo;s look at what that&rsquo;s like:">
+<meta name="author" content="0xDamian">
+<link rel="canonical" href="http://localhost:1313/blog/buying-jacket/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.85c6ff9febe222f48442e0cb94ce3a9364c6644d81b68becf905357336901553.css" integrity="sha256-hcb/n&#43;viIvSEQuDLlM46k2TGZE2Btovs&#43;QU1czaQFVM=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/blog/buying-jacket/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:url" content="http://localhost:1313/blog/buying-jacket/">
+  <meta property="og:site_name" content="DAMNSEC">
+  <meta property="og:title" content="How To Become A Hacker">
+  <meta property="og:description" content="Web Exploitation
+Buying A $1,300 Jacket With $0 In Credit 0xDamian 03 Apr 2024 — 4 min read
+CLICK-BAIT, BOZO 🫵🏾💀I’m not a thief.
+This was done in a controlled environment, a place where you can practice your web application hacking skills, Portswigger Academy.
+In this API lab, I was able to utilise Burpsuite to capture requests and abuse an unused API endpoint. Let’s look at what that’s like:">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="blog">
+    <meta property="article:published_time" content="2024-04-03T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-04-03T00:00:00+00:00">
+    <meta property="article:tag" content="Blog">
+    <meta property="article:tag" content="Hacking">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="How To Become A Hacker">
+<meta name="twitter:description" content="Web Exploitation
+Buying A $1,300 Jacket With $0 In Credit
+
+0xDamian
+03 Apr 2024 — 4 min read
+
+CLICK-BAIT, BOZO 🫵🏾💀I&rsquo;m not a thief.
+This was done in a controlled environment, a place where you can practice your web application hacking skills, Portswigger Academy.
+In this API lab, I was able to utilise Burpsuite to capture requests and abuse an unused API endpoint. Let&rsquo;s look at what that&rsquo;s like:">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Blogs",
+      "item": "http://localhost:1313/blog/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "How To Become A Hacker",
+      "item": "http://localhost:1313/blog/buying-jacket/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "How To Become A Hacker",
+  "name": "How To Become A Hacker",
+  "description": "Web Exploitation\nBuying A $1,300 Jacket With $0 In Credit 0xDamian 03 Apr 2024 — 4 min read\nCLICK-BAIT, BOZO 🫵🏾💀I\u0026rsquo;m not a thief.\nThis was done in a controlled environment, a place where you can practice your web application hacking skills, Portswigger Academy.\nIn this API lab, I was able to utilise Burpsuite to capture requests and abuse an unused API endpoint. Let\u0026rsquo;s look at what that\u0026rsquo;s like:\n",
+  "keywords": [
+    "blog", "hacking"
+  ],
+  "articleBody": "Web Exploitation\nBuying A $1,300 Jacket With $0 In Credit 0xDamian 03 Apr 2024 — 4 min read\nCLICK-BAIT, BOZO 🫵🏾💀I’m not a thief.\nThis was done in a controlled environment, a place where you can practice your web application hacking skills, Portswigger Academy.\nIn this API lab, I was able to utilise Burpsuite to capture requests and abuse an unused API endpoint. Let’s look at what that’s like:\nFirst off, I was given the credentials wiener:peter, which acts as an account for a shopping website.\nAfter logging in, you will find a list of products.\nYou’d also find that, I’m mad broke with $0 in credit, but that jacket looks so cool and I’d look so good wearing that (I never leave my house).\nThis is where Burpsuite comes in. I’ve had it running before I even logged in, so it has been capturing my requests. I clicked the “View details” button and then added it to the cart. The request of that action looks like this:\nIn the above image, I see the end-point /api/products/1/price, and a GET request to it gives us a response with a \"price\" and \"message\" parameter.\n{\"price\":\"$1337.00\",\"message\":\"Buy quick, we are low on stock! 2 purchased in the last 11 minutes!\"} Then, I moved the request to Burp repeater for further testing.\nNext, I wanted to see what HTTP methods were allowed, besides the known GET method used to retrieve the price of the jacket. I achieved that by replacing GET with the OPTIONS HTTP method in that request in Burp repeater.\nThe resulting response is shown in the image below.\nHighlighted by the right, you can see we have found the PATCH HTTP method to be allowed on this API endpoint.\nBut what exactly is the PATCH HTTP method?\nThe PATCH HTTP method updates existing resources without completely modifying the entire data, or as Portswigger Academy says, it applies partial changes to a resource.\nI assume this was simply made for admins to change the price in the case of a mistake or just a duly update to match the shift in the state of a worsening economy.\nAnd for some reason, they had forgotten that it existed, allowing me to purchase their jacket without having to pay anything. LMAO\nRight, so PATCH works and I went ahead to test it, but a minor error pops up.\nApparently, the server requires the application/json Content-Type when sending this request, which means, to update whatever resource at the /api/products/1/price endpoint, I’d have to send it in a JSON format.\nSo, I let it have its way and added the Content-Type: application/json header to the request body and an empty JSON object ( {} ), and then this happened.\nIt tells me the \"price\" parameter is missing. Basically shouting at me about how I’m telling it to modify nothing. But wait…this is confirmation. I can modify the price of the jacket! 🗣️🔥\nI went straight for it, including the \"price\" parameter and gave it the value of 0.\n{ \"price\": 0 } BOMBOCLAT! 😭200 OK\nIt worked! To confirm, I went to the page, refreshed the page and the price of the jacket was $0.\nI added it to the cart, and again, the price was still $0.\nI hit the “Place order” button and boom, the jacket was on its way to my home.\nSo what exactly did I learn here? I learnt that by sending a request using the OPTIONS HTTP method, I can see what type of requests I can send to the server on a particular endpoint. GET, PATCH, etc.\nI also learnt how the PATCH HTTP method can be used to change the value of a particular resource, like the price of a product on a shopping website.\nYou can only imagine the possibilities!\nI hope you had as much fun reading this as I had learning and writing about it!\nThanks for reading!\nEmbedded Content Subscribe\n",
+  "wordCount" : "656",
+  "inLanguage": "en",
+  "datePublished": "2024-04-03T00:00:00Z",
+  "dateModified": "2024-04-03T00:00:00Z",
+  "author":{
+    "@type": "Person",
+    "name": "0xDamian"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http://localhost:1313/blog/buying-jacket/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "DAMNSEC",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://localhost:1313/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header sticky-header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="DAMNSEC (Alt + H)">DAMNSEC</a>
+            <span class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+                <ul class="lang-switch"><li>|</li>
+                </ul>
+            </span>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/" title="Home">
+                    <span>Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/blog" title="Blog">
+                    <span>Blog</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/audits" title="Audits">
+                    <span>Audits</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/experience" title="Experience">
+                    <span>Experience</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/search" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/blog/">Blogs</a></div>
+    <h1 class="post-title entry-hint-parent">
+      How To Become A Hacker
+    </h1>
+    <div class="post-meta">
+
+0xDamian
+
+</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">‎ Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#buying-a-1300-jacket-with-0-in-credit" aria-label="Buying A $1,300 Jacket With $0 In Credit">Buying A $1,300 Jacket With $0 In Credit</a><ul>
+                        <ul>
+                        <ul>
+                        
+                <li>
+                    <a href="#0xdamian" aria-label="0xDamian">0xDamian</a></li></ul>
+                    
+                <li>
+                    <a href="#so-what-exactly-did-i-learn-here" aria-label="So what exactly did I learn here?">So what exactly did I learn here?</a></li></ul>
+                    
+                <li>
+                    <a href="#embedded-content" aria-label="Embedded Content">Embedded Content</a>
+                </li>
+            </ul>
+            </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><p><a href="https://www.damnsec.com/tag/web-exploitation/">Web Exploitation</a></p>
+<h1 id="buying-a-1300-jacket-with-0-in-credit">Buying A $1,300 Jacket With $0 In Credit<a hidden class="anchor" aria-hidden="true" href="#buying-a-1300-jacket-with-0-in-credit">#</a></h1>
+<p><a href="/author/0xdamian/"><img alt="0xDamian" loading="lazy" src="https://www.gravatar.com/avatar/3d964dd6f39abf0cd14b7929fdd80c9f?s=250&r=x&d=mp"></a></p>
+<h4 id="0xdamian"><a href="/author/0xdamian/">0xDamian</a><a hidden class="anchor" aria-hidden="true" href="#0xdamian">#</a></h4>
+<p>03 Apr 2024 — 4 min read</p>
+<p><img alt="Buying A $1,300 Jacket With $0 In Credit" loading="lazy" src="/content/images/size/w1200/2024/04/1.png"></p>
+<p><strong>CLICK-BAIT, BOZO</strong> 🫵🏾💀I&rsquo;m not a thief.</p>
+<p>This was done in a controlled environment, a place where you can practice your web application hacking skills, <a href="https://portswigger.net/web-security/?ref=damnsec.com">Portswigger Academy</a>.</p>
+<p>In this <a href="https://portswigger.net/web-security/api-testing/lab-exploiting-unused-api-endpoint?ref=damnsec.com">API lab</a>, I was able to utilise Burpsuite to capture requests and abuse an unused API endpoint. Let&rsquo;s look at what that&rsquo;s like:</p>
+<p>First off, I was given the credentials <code>wiener:peter</code>, which acts as an account for a shopping website.<br>
+After logging in, you will find a list of products.</p>
+<p><img loading="lazy" src="https://www.damnsec.com/content/images/2024/04/image.png"></p>
+<p>You&rsquo;d also find that, I&rsquo;m mad broke with $0 in credit, but that jacket looks so cool and I&rsquo;d look so good wearing that (I never leave my house).</p>
+<p>This is where Burpsuite comes in. I&rsquo;ve had it running before I even logged in, so it has been capturing my requests. I clicked the &ldquo;View details&rdquo; button and then added it to the cart. The request of that action looks like this:</p>
+<p><img loading="lazy" src="https://www.damnsec.com/content/images/2024/04/2.png"></p>
+<p>In the above image, I see the end-point <code>/api/products/1/price</code>, and a <code>GET</code> request to it gives us a response with a <code>&quot;price&quot;</code> and <code>&quot;message&quot;</code> parameter.</p>
+<pre tabindex="0"><code>{&#34;price&#34;:&#34;$1337.00&#34;,&#34;message&#34;:&#34;Buy quick, we are low on stock! 2 purchased in the last 11 minutes!&#34;}
+</code></pre><p>Then, I moved the request to Burp repeater for further testing.<br>
+Next, I wanted to see what HTTP methods were allowed, besides the known <code>GET</code> method used to retrieve the price of the jacket. I achieved that by replacing <code>GET</code> with the <code>OPTIONS</code> HTTP method in that request in Burp repeater.<br>
+The resulting response is shown in the image below.</p>
+<p><img loading="lazy" src="https://www.damnsec.com/content/images/2024/04/1.1.png"></p>
+<p>Highlighted by the right, you can see we have found the <code>PATCH</code> HTTP method to be allowed on this API endpoint.<br>
+But what exactly is the <code>PATCH</code> HTTP method?</p>
+<p>The <code>PATCH</code> HTTP method updates existing resources without completely modifying the entire data, or as Portswigger Academy says, it <em>applies partial changes to a resource.</em></p>
+<p>I assume this was simply made for admins to change the price in the case of a mistake or just a duly update to match the shift in the state of a worsening economy.<br>
+And for some reason, they had forgotten that it existed, allowing me to purchase their jacket without having to pay anything. LMAO</p>
+<p>Right, so <code>PATCH</code> works and I went ahead to test it, but a minor error pops up.</p>
+<p><img loading="lazy" src="https://www.damnsec.com/content/images/2024/04/4.png"></p>
+<p>Apparently, the server requires the <code>application/json</code> Content-Type when sending this request, which means, to update whatever resource at the <code>/api/products/1/price</code> endpoint, I&rsquo;d have to send it in a JSON format.<br>
+So, I let it have its way and added the <code>Content-Type: application/json</code> header to the request body and an empty JSON object ( <code>{}</code> ), and then this happened.</p>
+<p><img loading="lazy" src="https://www.damnsec.com/content/images/2024/04/5.png"></p>
+<p>It tells me the <code>&quot;price&quot;</code> parameter is missing. Basically shouting at me about how I&rsquo;m telling it to modify nothing. But wait&hellip;this is confirmation. I can modify the price of the jacket! 🗣️🔥</p>
+<p>I went straight for it, including the <code>&quot;price&quot;</code> parameter and gave it the value of <code>0</code>.</p>
+<pre tabindex="0"><code>{
+  &#34;price&#34;: 0
+}
+</code></pre><p><img loading="lazy" src="https://www.damnsec.com/content/images/2024/04/6.png"></p>
+<p>BOMBOCLAT! 😭<code>200 OK</code></p>
+<p>It worked! To confirm, I went to the page, refreshed the page and the price of the jacket was $0.<br>
+I added it to the cart, and again, the price was still $0.</p>
+<p><img loading="lazy" src="https://www.damnsec.com/content/images/2024/04/8.png"></p>
+<p>I hit the &ldquo;Place order&rdquo; button and boom, the jacket was on its way to my home.</p>
+<h3 id="so-what-exactly-did-i-learn-here">So what exactly did I learn here?<a hidden class="anchor" aria-hidden="true" href="#so-what-exactly-did-i-learn-here">#</a></h3>
+<p><img alt="Pin by o on Quick Saves | Light yagami, Death note, Death note light" loading="lazy" src="https://i.pinimg.com/originals/b4/4a/6d/b44a6dc2145feae8c9a138ee878c46dd.gif"></p>
+<p>I learnt that by sending a request using the <code>OPTIONS</code> HTTP method, I can see what type of requests I can send to the server on a particular endpoint. GET, PATCH, etc.<br>
+I also learnt how the <code>PATCH</code> HTTP method can be used to change the value of a particular resource, like the price of a product on a shopping website.<br>
+You can only imagine the possibilities!</p>
+<p>I hope you had as much fun reading this as I had learning and writing about it!<br>
+Thanks for reading!</p>
+<h2 id="embedded-content">Embedded Content<a hidden class="anchor" aria-hidden="true" href="#embedded-content">#</a></h2>
+<p>Subscribe</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/blog/">Blog</a></li>
+      <li><a href="http://localhost:1313/tags/hacking/">Hacking</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2025 <a href="http://localhost:1313/">DAMNSEC</a></span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

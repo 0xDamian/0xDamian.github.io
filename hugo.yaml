@@ -1,0 +1,105 @@
+baseURL: "https://damnsec.com"
+languageCode: en-us
+title: DAMNSEC
+theme: PaperMod
+
+menu:
+  main:
+    - identifier: home
+      name: Home
+      url: /
+      weight: 10
+    - identifier: about
+      name: About Me
+      url: /about
+      weight: 20
+    - identifier: blog
+      name: Blog
+      url: /blog
+      weight: 30
+    - identifier: audits
+      name: Audits
+      url: /audits
+      weight: 40
+    - identifier: experience
+      name: Experience
+      url: /experience
+      weight: 50
+    - identifier: search
+      name: Search
+      url: /search
+      weight: 60
+    # - identifier: tags
+    #   name: Tags
+    #   url: /tags
+    #   weight: 60
+    # - identifier: notes
+    #   name: Notes
+    #   url: https://notes.arkalim.org
+    #   weight: 70
+
+params:
+  # theme
+  showToc: true
+  TocOpen: false
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  hideMeta: false
+
+  # for enchanced SEO
+  env: production
+
+  # Home Page
+  profileMode:
+    enabled: true
+    title: "0xDamian"
+    subtitle: "Penetration Tester | Smart Contract Auditor | Rustacean 🦀"
+
+ 
+    imageUrl: "home/profile-image.jpg"
+    imageWidth: 220
+    imageHeight: 220
+    # buttons:
+    #   - name: Resume
+    #     url: ""
+
+  # List View
+  hideDescriptionInList: false
+
+  # cover image for posts
+  cover:
+    hiddenInList: false # hide on list pages and home
+    hiddenInSingle: false # hide on single page
+
+  socialIcons:
+    - name: twitter
+      url: "https://x.com/damnsec1"
+    - name: github
+      url: "https://github.com/0xDamian"
+    - name: hackthebox
+      url: "https://app.hackthebox.com/profile/523191"
+    - name: discord
+      url:  "https://discord.com/users/1095335873022791840"
+
+  # text search
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"]
+
+# for search using Fuse.js
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+# allow HTML in MD
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
