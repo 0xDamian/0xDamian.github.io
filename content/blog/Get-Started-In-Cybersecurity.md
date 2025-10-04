@@ -71,7 +71,7 @@ Done with the basics? Let's...
 
 ### Find Your Niche
 
-![](https://www.damnsec.com/content/images/2024/04/data-src-image-0fdd7d7e-85bf-4428-ae17-3805186fa101.png)
+![[static/blog/Start-Cyber/img5.png]]
 
 You've found out about Cybersecurity and chances are, you want to become a hacker. It sounds fun, doesn't it? Let's...back up a little.  
 There are numerous Cybersecurity paths, it's quite ridiculous.  
