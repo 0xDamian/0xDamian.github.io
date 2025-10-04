@@ -49,15 +49,15 @@ Here are resources you can learn Linux from:
 
 ### Cybersecurity Concepts/Practices
 
-![Anime+Cyberpunk.gif (500×269) | Cyberpunk anime, Cyberpunk, Anime](https://i.pinimg.com/originals/ca/bd/8b/cabd8bdddc0e14a889b79644ca70ad21.gif)
+![](/static)
 
 Understanding what the deal is with Cybersecurity shouldn't have to be mentioned, but let me properly direct you to the recommended resources:  
-1\. [TryHackMe's Intro to Cybersecurity path](https://tryhackme.com/path/outline/introtocyber?ref=damnsec.com)  
-2\. [Professor Messer's Security+ YouTube series](https://www.professormesser.com/get-security-plus-certified/?ref=damnsec.com)
+1 . [TryHackMe's Intro to Cybersecurity path](https://tryhackme.com/path/outline/introtocyber)  
+2 . [Professor Messer's Security+ YouTube series](https://www.professormesser.com/get-security-plus-certified/?ref=damnsec.com)
 
 ### Programming (Just a lil 🤏🏾👀)
 
-![Who are you?" "I'm a Detective" "Why is the ability call that?" …  #fanfiction #Fanfiction #amreading #books #wattpad | Anime, Anime girl,  Programmer girl](https://i.pinimg.com/originals/e1/85/18/e18518c6d24257c6fb02e3c95a862d85.gif)
+![](/../blog/Start-Cyber/anime-girl-typing.gif)
 
 I understand that a lot of people want to avoid this, but please don't. Especially if you want to get into a technical role in the industry. In my experience, I have noticed how much programming becomes quite relevant as I advance in my career.  
 That said, you don't have to become some super programmer. The least you should be able to do is read code and write small scripts to make your workload lighter through automation.  
@@ -71,7 +71,9 @@ Done with the basics? Let's...
 
 ### Find Your Niche
 
-![[static/blog/Start-Cyber/img5.png]]
+![Image Description](/../blog/Start-Cyber/img5.png)
+
+
 
 You've found out about Cybersecurity and chances are, you want to become a hacker. It sounds fun, doesn't it? Let's...back up a little.  
 There are numerous Cybersecurity paths, it's quite ridiculous.  
@@ -106,7 +108,8 @@ These certs appear a lot in job descriptions and make your chances of getting an
 
 ### FAQ
 
-![[static/blog/Start-Cyber/anime-girl-thinking.gif]]
+![Alt Text](/../blog/Start-Cyber/anime-girl-thinking.gif "Test")
+
 
 Q: Do you need a degree to get a job?  
 A: In some cases, you do. At the moment, I have a job in Cybersecurity and do not have my degree yet, nor has being a student helped. Many get jobs without a degree, so don't lose hope.  

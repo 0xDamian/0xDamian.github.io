@@ -96,7 +96,7 @@ This is in no particular order. They are YouTube channels focused on Cybersecuri
 
 ### Certificates
 
-![](https://www.damnsec.com/content/images/2024/05/data-src-image-7b62a0b1-1ab5-4694-b44f-9ee49c617eb6.png)
+
 
 There are a lot of debates around certificates. Whether you should get one or don't get one or give specific ones you should get for your money's worth. Let's talk about them a little.
 
