@@ -106,7 +106,7 @@ These certs appear a lot in job descriptions and make your chances of getting an
 
 ### FAQ
 
-![7 Anime-Related Questions That Are Strangely Difficult To Answer](https://animemotivation.com/wp-content/uploads/2017/10/anime-girl-thinking.gif)
+![[static/blog/Start-Cyber/anime-girl-thinking.gif]]
 
 Q: Do you need a degree to get a job?  
 A: In some cases, you do. At the moment, I have a job in Cybersecurity and do not have my degree yet, nor has being a student helped. Many get jobs without a degree, so don't lose hope.  
