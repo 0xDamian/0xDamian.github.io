@@ -1,5 +1,5 @@
 ---
-title: Finding Femi | OSINT On Nigerians
+title: Get Started In Cybersecurity | A Comprehensive Guide
 date: 2024-04-01
 draft: false
 tags:
