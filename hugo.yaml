@@ -21,14 +21,10 @@ menu:
       name: Audits
       url: /audits
       weight: 40
-    - identifier: experience
-      name: Experience
-      url: /experience
-      weight: 50
     - identifier: search
       name: Search
       url: /search
-      weight: 60
+      weight: 50
     # - identifier: tags
     #   name: Tags
     #   url: /tags
