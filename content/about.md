@@ -10,50 +10,46 @@ My name is Damian, an Ethical Hacker/Penetration Tester with years of experience
 In addition, I am an educator and an ex Instructor at the [CyBlack](https://twitter.com/Cyblackorg?ref=damnsec.com) x **Cisco** Academy.
 
 ---
-
 # Experience 🏢
 
 ## Offensive Security Education Lead
-### Fezzant
+### _Fezzant_
 _Remote, United Kingdom_ | _May. 2024 — Oct. 2024_
 
 - Developed Ethical Hacking labs hosted on Cloud Environments.
 - Established an Ethical Hacking course-ware for students.
 - Explored ways to train and educate students on Ethical Hacking.
-
-
+---
 ## Networking Instructor
-### Cisco Networking Academy x CyBlack
+### _Cisco Networking Academy x CyBlack_
 _Remote, United Kingdom_ | _Jan. 2024 — Jun. 2024_
 
 -   Facilitating and instructing students in the CyBlack Cisco academy.
 -   Instructor for the Networking Basics course.
-
-
-## Ethical Hacking Instructor
-###  **CyBlack**
+---
+## Ethical Hacking Instructor
+### _CyBlack_
 _Remote, United Kingdom_ | _Aug. 2023 — Oct 2023_
 
 -   Educating participants of the DataKirk summit on Ethical Hacking/Penetration Testing. 
-
+---
 ## Cybersecurity Analyst
-### Cybarik 
+### _Cybarik_
 _Remote, United Kingdom_ | _May 2023 — June. 2023_  
 -   API security testing as a Penetration Tester intern for a Fintech company's VAPT project, collaborating with the team and delivering weekly progress reports to clients.
 -   In charge of culminating technical and executive reports.
-
+---
 
 ## Penetration Tester & Content Writer
-### **Fezzant**
+### _Fezzant_
 _Remote, United Kingdom Oct. 2022 — Feb. 2023_
 
 -   Web Security: Evaluated and addressed web app vulnerabilities, applying remediation for enhanced security. Performed routine security tests and monitoring to safeguard client cloud-based apps.
 -   Researched cybersecurity subjects to enrich web content for client initiatives. Developed and edited content according to project parameters and guidelines.  
-
-
+---
 ## Cyber Security Intern
-### **CyBlack**
-_Remote, United Kingdom Sept. 2022 — Dec. 2022_
+### _CyBlack_
+_Remote, United Kingdom_ | _Sept. 2022 — Dec. 2022_
 
 -   Team Lead - Managed report compilation by synthesising individual contributions into cohesive team reports for the following tasks:
 -   Threat Intelligence: Researched diverse organisational threats, crafting comprehensive reports with mitigation recommendations.
