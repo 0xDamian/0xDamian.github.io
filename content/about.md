@@ -13,41 +13,45 @@ In addition, I am an educator and an ex Instructor at the [CyBlack](https://twit
 
 # Experience 🏢
 
-## **CyBlack x Cisco**
+## Offensive Security Education Lead
+_Remote, United Kingdom_ | _May. 2024 — Oct. 2024_
 
-### Cisco Academy Instructor
-_Remote, United Kingdom Jan. 2024 — Present_
+- Developed Ethical Hacking labs hosted on Cloud Environments.
+- Established an Ethical Hacking course-ware for students.
+- Explored ways to train and educate students on Ethical Hacking.
+
+
+## Networking Instructor
+### **Cisco Networking Academy x CyBlack**
+_Remote, United Kingdom_ | _Jan. 2024 — Jun. 2024_
 
 -   Facilitating and instructing students in the CyBlack Cisco academy.
 -   Instructor for the Networking Basics course.
 
-##  **CyBlack**
 
-###  Ethical Hacking Instructor
+##  Ethical Hacking Instructor
+###  **CyBlack**
+_Remote, United Kingdom_ | _Aug. 2023 — Oct 2023_
 
--   Educating participants of the DataKirk summit on Ethical Hacking/Penetration Testing. (Remote, United Kingdom Aug. 2023 — Oct 2023)
+-   Educating participants of the DataKirk summit on Ethical Hacking/Penetration Testing. 
 
-## **Cybarik**
-
-### Penetration Tester
-_Remote, United Kingdom May 2023 — June. 2023_  
+## Cybersecurity Analyst
+### Cybarik 
+_Remote, United Kingdom_ | _May 2023 — June. 2023_  
 -   API security testing as a Penetration Tester intern for a Fintech company's VAPT project, collaborating with the team and delivering weekly progress reports to clients.
 -   In charge of culminating technical and executive reports.
 
 
-## **Fezzant**
-
-### Penetration Tester & Content Writer
+## Penetration Tester & Content Writer
+### **Fezzant**
 _Remote, United Kingdom Oct. 2022 — Feb. 2023_
 
 -   Web Security: Evaluated and addressed web app vulnerabilities, applying remediation for enhanced security. Performed routine security tests and monitoring to safeguard client cloud-based apps.
 -   Researched cybersecurity subjects to enrich web content for client initiatives. Developed and edited content according to project parameters and guidelines.  
-    
 
-## **CyBlack**
 
-### Cyber Security Intern
-
+## Cyber Security Intern
+### **CyBlack**
 _Remote, United Kingdom Sept. 2022 — Dec. 2022_
 
 -   Team Lead - Managed report compilation by synthesising individual contributions into cohesive team reports for the following tasks:
@@ -77,8 +81,9 @@ _Remote, United Kingdom Sept. 2022 — Dec. 2022_
 
 ## Projects:
 
--   Intrusion Detection System written in BASH - here
--   Discord Bot. Posts Cybersecurity News every hour using an API - here
+-  Fast and simple port scanner *(Rust)* - [here](https://github.com/0xDamian/ip_sniffer)
+-   Intrusion Detection System written in *(BASH)* - [here](https://github.com/0xDamian/ids)
+-   Discord Bot. Posts Cybersecurity News every hour using Google API *(Python)* - [here](https://github.com/0xDamian/Discord-Bot-Template)
 
 ## Hobbies 🎮
 
