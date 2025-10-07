@@ -14,6 +14,7 @@ In addition, I am an educator and an ex Instructor at the [CyBlack](https://twit
 # Experience 🏢
 
 ## Offensive Security Education Lead
+### Fezzant
 _Remote, United Kingdom_ | _May. 2024 — Oct. 2024_
 
 - Developed Ethical Hacking labs hosted on Cloud Environments.
@@ -22,7 +23,7 @@ _Remote, United Kingdom_ | _May. 2024 — Oct. 2024_
 
 
 ## Networking Instructor
-### **Cisco Networking Academy x CyBlack**
+### Cisco Networking Academy x CyBlack
 _Remote, United Kingdom_ | _Jan. 2024 — Jun. 2024_
 
 -   Facilitating and instructing students in the CyBlack Cisco academy.
