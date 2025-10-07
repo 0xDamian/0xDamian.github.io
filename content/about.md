@@ -30,7 +30,7 @@ _Remote, United Kingdom_ | _Jan. 2024 — Jun. 2024_
 -   Instructor for the Networking Basics course.
 
 
-##  Ethical Hacking Instructor
+## Ethical Hacking Instructor
 ###  **CyBlack**
 _Remote, United Kingdom_ | _Aug. 2023 — Oct 2023_
 
