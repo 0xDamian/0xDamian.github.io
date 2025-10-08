@@ -6,7 +6,7 @@ tags:
 author: 0xDamian
 ---
 ---
-My name is Damian, an Ethical Hacker/Penetration Tester with years of experience in the Cybersecurity field and interest in Web 3 Security. In my spare time, I take on CTF challenges and build projects in the Rust Progamming Language. I particularly test the security of web applications and networks, coupled with my experience with cloud services.  
+My name is Damian, an Ethical Hacker/Penetration Tester with years of experience in the Cybersecurity field and interest in Web 3 Security. In my spare time, I take on CTF challenges and build projects in the Rust Programming Language. I particularly test the security of web applications and networks, coupled with my experience with cloud services.  
 In addition, I am an educator and an ex Instructor at the [CyBlack](https://twitter.com/Cyblackorg?ref=damnsec.com) x **Cisco** Academy.
 
 ---
