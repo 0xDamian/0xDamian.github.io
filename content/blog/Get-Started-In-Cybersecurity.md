@@ -49,7 +49,7 @@ Here are resources you can learn Linux from:
 
 ### Cybersecurity Concepts/Practices
 
-![](/static)
+![](/../blog/Start-Cyber/img4.gif)
 
 Understanding what the deal is with Cybersecurity shouldn't have to be mentioned, but let me properly direct you to the recommended resources:  
 1 . [TryHackMe's Intro to Cybersecurity path](https://tryhackme.com/path/outline/introtocyber)  
