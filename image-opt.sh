@@ -7,18 +7,16 @@ WIDTH=800
 HEIGHT=600
 HASHFILE="$FOLDER/.image_hashes"
 
-# Dependencies: imagemagick, jpegoptim, optipng, img-optimize
-for cmd in convert md5sum img-optimize jpegoptim optipng; do
-    if ! command -v $cmd &> /dev/null; then
+# Dependencies: imagemagick, jpegoptim, optipng, gifsicle
+for cmd in magick md5sum jpegoptim optipng gifsicle; do
+    if ! command -v "$cmd" &> /dev/null; then
         echo "$cmd not found."
         exit 1
     fi
 done
 
-# Ensure hashfile exists
 touch "$HASHFILE"
 
-# Load existing hashes
 declare -A old_hashes
 while read -r hash file; do
     old_hashes["$file"]="$hash"
@@ -34,11 +32,21 @@ find "$FOLDER" -type f \( -iname '*.png' -o -iname '*.jpg' -o -iname '*.jpeg' -o
     if [[ "${old_hashes[$relpath]:-}" != "$new_hash" ]]; then
         echo "Optimizing $relpath ..."
         case "$img" in
-            *.png|*.jpg|*.jpeg|*.gif|*.webp)
-                convert "$img" -resize "${WIDTH}x${HEIGHT}>" "$img"
+            *.jpg|*.jpeg)
+                magick "$img" -resize "${WIDTH}x${HEIGHT}>" "$img"
+                jpegoptim --strip-all --max=85 "$img" >/dev/null
+                ;;
+            *.png)
+                magick "$img" -resize "${WIDTH}x${HEIGHT}>" "$img"
+                optipng -o7 "$img" >/dev/null
+                ;;
+            *.gif)
+                gifsicle -O3 --colors 256 "$img" -o "$img" >/dev/null
+                ;;
+            *.webp)
+                magick "$img" -resize "${WIDTH}x${HEIGHT}>" "$img"
                 ;;
         esac
-        img-optimize --std --path "$(dirname "$img")" > /dev/null 2>&1 || true
         updated=$((updated+1))
     fi
 
