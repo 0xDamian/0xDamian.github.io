@@ -70,6 +70,8 @@ params:
   socialIcons:
     - name: twitter
       url: "https://x.com/damnsec1"
+    - name: linkedin
+      url: "https://www.linkedin.com/in/damnsec/"
     - name: github
       url: "https://github.com/0xDamian"
     - name: hackthebox
