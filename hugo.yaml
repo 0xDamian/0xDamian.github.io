@@ -13,10 +13,6 @@ menu:
       name: Blog
       url: /blog
       weight: 20
-    - identifier: audits
-      name: Audits
-      url: /audits
-      weight: 30
     - identifier: about
       name: About Me
       url: /about
@@ -70,11 +66,11 @@ params:
   socialIcons:
     - name: twitter
       url: "https://x.com/damnsec1"
+    - name: bluesky
+      url: "https://bsky.app/profile/damnsec.bsky.social"
     - name: linkedin
       url: "https://www.linkedin.com/in/damnsec/"
     - name: github
-      url: "https://github.com/0xDamian"
-    - name: hackthebox
       url: "https://app.hackthebox.com/profile/523191"
     - name: discord
       url:  "https://discord.com/users/1095335873022791840"

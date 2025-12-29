@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="auto">
+<html lang="en" dir="auto" data-theme="auto">
 
 <head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,7 +10,7 @@
 <meta name="description" content="">
 <meta name="author" content="">
 <link rel="canonical" href="https://damnsec.com/tags/cybersecurity/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.85c6ff9febe222f48442e0cb94ce3a9364c6644d81b68becf905357336901553.css" integrity="sha256-hcb/n&#43;viIvSEQuDLlM46k2TGZE2Btovs&#43;QU1czaQFVM=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.e9f2934328be949461d0fe9c1663c6021002273727fd1cd9a0e1922e7f9cebac.css" integrity="sha256-6fKTQyi&#43;lJRh0P6cFmPGAhACJzcn/RzZoOGSLn&#43;c66w=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://damnsec.com/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://damnsec.com/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://damnsec.com/favicon-32x32.png">
@@ -40,23 +40,38 @@
                 --code-block-bg: rgb(46, 46, 51);
                 --code-bg: rgb(55, 56, 62);
                 --border: rgb(51, 51, 51);
+                color-scheme: dark;
             }
 
             .list {
                 background: var(--theme);
             }
 
-            .list:not(.dark)::-webkit-scrollbar-track {
-                background: 0 0;
+            .toc {
+                background: var(--entry);
             }
+        }
 
-            .list:not(.dark)::-webkit-scrollbar-thumb {
-                border-color: var(--theme);
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
             }
         }
 
     </style>
-</noscript><meta property="og:url" content="https://damnsec.com/tags/cybersecurity/">
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><meta property="og:url" content="https://damnsec.com/tags/cybersecurity/">
   <meta property="og:site_name" content="DAMNSEC">
   <meta property="og:title" content="Cybersecurity">
   <meta property="og:locale" content="en-us">
@@ -66,8 +81,8 @@
 <meta name="twitter:description" content="">
 
 </head>
-
 <body class="list" id="top">
+    
 <script>
     if (localStorage.getItem("pref-theme") === "dark") {
         document.body.classList.add('dark');
@@ -117,11 +132,6 @@
             <li>
                 <a href="https://damnsec.com/blog" title="Blog">
                     <span>Blog</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://damnsec.com/audits" title="Audits">
-                    <span>Audits</span>
                 </a>
             </li>
             <li>
