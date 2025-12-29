@@ -45,7 +45,7 @@ if [ -z "$(git status --porcelain)" ]; then
 else
     echo "Staging and committing changes..."
     git add .
-    commit_message="New Blog Post on $(date +'%Y-%m-%d %H:%M:%S')"
+    commit_message="Changes made on $(date +'%Y-%m-%d %H:%M:%S')"
     git commit -m "$commit_message"
 fi
 
