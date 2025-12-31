@@ -45,7 +45,7 @@ params:
   profileMode:
     enabled: true
     title: "0xDamian"
-    subtitle: "Penetration Tester | Smart Contract Auditor | Rustacean 🦀"
+    subtitle: "Penetration Tester • AppSec • Rustacean 🦀"
 
  
     imageUrl: "home/profile-image.jpg"
