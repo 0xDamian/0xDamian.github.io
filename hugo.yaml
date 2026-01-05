@@ -67,7 +67,7 @@ params:
     - name: twitter
       url: "https://x.com/damnsec1"
     - name: bluesky
-      url: "https://bsky.app/profile/damnsec.bsky.social"
+      url: "https://bsky.app/profile/damnsec.com"
     - name: linkedin
       url: "https://www.linkedin.com/in/damnsec/"
     - name: github
