@@ -66,12 +66,8 @@ params:
   socialIcons:
     - name: twitter
       url: "https://x.com/damnsec1"
-    - name: bluesky
-      url: "https://bsky.app/profile/damnsec.com"
-    - name: linkedin
-      url: "https://www.linkedin.com/in/damnsec/"
     - name: github
-      url: "https://app.hackthebox.com/profile/523191"
+      url: "https://github.com/0xDamian"
     - name: discord
       url:  "https://discord.com/users/1095335873022791840"
 
