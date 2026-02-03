@@ -37,7 +37,7 @@ Where do you even start? Let us find out.
 
 ![sailor venus! — 𝖌𝖚𝖓𝖘](https://64.media.tumblr.com/98ac86365409968fb9334a88eb0eab36/c34d40a841c9a7d4-e0/s500x750/9474348e12d5a462cc57126d2f6fdb02221f1e32.gif)
 
-Before we begin, I have listed sources to get you started in the fundamentals of Cybersecurity. You can read my blog on this [here](https://www.damnsec.com/how-to-get-started-in-cybersecurity/). Without this, you can't continue with the resources listed here.
+Before we begin, I have listed sources to get you started in the fundamentals of Cybersecurity. You can read my blog on this [here](https://damnsec.com/blog/get-started-in-cybersecurity/). Without this, you can't continue with the resources listed here.
 
 This section of the blog focuses on FREE resources for practising. A balance of theoretical and practical knowledge to get you from zero to people asking rubbish like if you could hack someone for them. You will become impressive to the normies.
 
