@@ -4,10 +4,19 @@
     <title>Blogs on DAMNSEC</title>
     <link>https://damnsec.com/blog/</link>
     <description>Recent content in Blogs on DAMNSEC</description>
-    <generator>Hugo -- 0.154.2</generator>
+    <generator>Hugo -- 0.160.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 23 May 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 21 Apr 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://damnsec.com/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hate Less. Hack More.</title>
+      <link>https://damnsec.com/blog/hate-less-hack-more/</link>
+      <pubDate>Tue, 21 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://damnsec.com/blog/hate-less-hack-more/</guid>
+      <description>&lt;p&gt;I believe that, as a hacker, there are certain values you should have. I could go on a rant about this alone, but a non-negotiable trait is tolerance for people who are different.&lt;/p&gt;
+&lt;h2 id=&#34;after-all-were-all-alike&#34;&gt;After All, We’re All Alike&lt;/h2&gt;
+&lt;p&gt;I decided to be a hacker after almost a lifetime of wanting to become a pilot just like my dad. What drove my decision was the realisation that I actually really liked computers, and I loved breaking things to learn how they worked. Not too long from there, I dove straight in…alone.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>How To Become A Hacker</title>
       <link>https://damnsec.com/blog/how-to-become-a-hacker/</link>
