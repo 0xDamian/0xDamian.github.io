@@ -2,17 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>AI on DAMNSEC</title>
-    <link>http://localhost:1313/tags/ai/</link>
+    <link>https://damnsec.com/tags/ai/</link>
     <description>Recent content in AI on DAMNSEC</description>
-    <generator>Hugo -- 0.150.1</generator>
+    <generator>Hugo -- 0.160.1</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:1313/tags/ai/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 22 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://damnsec.com/tags/ai/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Software Engineer (LLM &amp; Backend Infrastructure)</title>
-      <link>http://localhost:1313/experience/16bit/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/experience/16bit/</guid>
-      <description>16Bit | Toronto, Canada</description>
+      <title>All New and Improved Cybersecurity...Attack Surfaces?</title>
+      <link>https://damnsec.com/blog/all-new-and-improved-cybersecurity-attack-surfaces/</link>
+      <pubDate>Wed, 22 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://damnsec.com/blog/all-new-and-improved-cybersecurity-attack-surfaces/</guid>
+      <description>&lt;p&gt;Since the generative AI boom, everyone has found a use case for it. Reviewing their writing, planning a study guide, sharing hard-coded API keys/company secrets critical to their organisation&amp;rsquo;s infrastructure, and even using it as a financial adviser.
+What? The whole sharing company secrets thing? Pfft. Oh yeah, people do it all the time.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://securityaffairs.com/144597/security/samsung-data-leak-chatgpt.html#:~:text=%E2%80%9CIn%20another%20case%2C%20an%20employee,Affairs%20as%20your%20favorite%20blog.&#34;&gt;Samsung employees unwittingly leaked company secret data by using ChatGPT&lt;/a&gt;. They shared information like meeting documents and source code with chatGPT. This led to 3 data leaks in just under a month via chatGPT.
+How about the &lt;a href=&#34;https://thehackernews.com/2025/02/12000-api-keys-and-passwords-found-in.html&#34;&gt;12,000+ API Keys and Passwords Found in Public Datasets Used for LLM Training&lt;/a&gt;? There were 219 different types of secrets found here. AWS root keys, Slack webhooks, Mailchimp API keys, name it. A lot of these were live, too.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

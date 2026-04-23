@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Windows on DAMNSEC</title>
-    <link>http://localhost:1313/tags/windows/</link>
-    <description>Recent content in Windows on DAMNSEC</description>
+    <title>Inclusion on DAMNSEC</title>
+    <link>https://damnsec.com/tags/inclusion/</link>
+    <description>Recent content in Inclusion on DAMNSEC</description>
     <generator>Hugo -- 0.160.1</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 21 Apr 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/windows/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://damnsec.com/tags/inclusion/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hate Less. Hack More.</title>
-      <link>http://localhost:1313/blog/hate-less-hack-more/</link>
+      <link>https://damnsec.com/blog/hate-less-hack-more/</link>
       <pubDate>Tue, 21 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/hate-less-hack-more/</guid>
+      <guid>https://damnsec.com/blog/hate-less-hack-more/</guid>
       <description>&lt;p&gt;I believe that, as a hacker, there are certain values you should have. I could go on a rant about this alone, but a non-negotiable trait is tolerance for people who are different.&lt;/p&gt;
 &lt;h2 id=&#34;after-all-were-all-alike&#34;&gt;After All, We’re All Alike&lt;/h2&gt;
 &lt;p&gt;I decided to be a hacker after almost a lifetime of wanting to become a pilot just like my dad. What drove my decision was the realisation that I actually really liked computers, and I loved breaking things to learn how they worked. Not too long from there, I dove straight in…alone.&lt;/p&gt;</description>

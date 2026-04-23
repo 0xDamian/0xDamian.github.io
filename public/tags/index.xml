@@ -6,48 +6,55 @@
     <description>Recent content in Tags on DAMNSEC</description>
     <generator>Hugo -- 0.160.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 21 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 22 Apr 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://damnsec.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI</title>
+      <link>https://damnsec.com/tags/ai/</link>
+      <pubDate>Wed, 22 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://damnsec.com/tags/ai/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Blog</title>
       <link>https://damnsec.com/tags/blog/</link>
-      <pubDate>Tue, 21 Apr 2026 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 22 Apr 2026 00:00:00 +0000</pubDate>
       <guid>https://damnsec.com/tags/blog/</guid>
       <description></description>
     </item>
     <item>
       <title>Cybersecurity</title>
       <link>https://damnsec.com/tags/cybersecurity/</link>
-      <pubDate>Tue, 21 Apr 2026 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 22 Apr 2026 00:00:00 +0000</pubDate>
       <guid>https://damnsec.com/tags/cybersecurity/</guid>
       <description></description>
     </item>
     <item>
       <title>Hacking</title>
       <link>https://damnsec.com/tags/hacking/</link>
-      <pubDate>Tue, 21 Apr 2026 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 22 Apr 2026 00:00:00 +0000</pubDate>
       <guid>https://damnsec.com/tags/hacking/</guid>
       <description></description>
     </item>
     <item>
       <title>Linux</title>
       <link>https://damnsec.com/tags/linux/</link>
-      <pubDate>Tue, 21 Apr 2026 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 22 Apr 2026 00:00:00 +0000</pubDate>
       <guid>https://damnsec.com/tags/linux/</guid>
       <description></description>
     </item>
     <item>
       <title>Tech</title>
       <link>https://damnsec.com/tags/tech/</link>
-      <pubDate>Tue, 21 Apr 2026 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 22 Apr 2026 00:00:00 +0000</pubDate>
       <guid>https://damnsec.com/tags/tech/</guid>
       <description></description>
     </item>
     <item>
-      <title>Windows</title>
-      <link>https://damnsec.com/tags/windows/</link>
+      <title>Inclusion</title>
+      <link>https://damnsec.com/tags/inclusion/</link>
       <pubDate>Tue, 21 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://damnsec.com/tags/windows/</guid>
+      <guid>https://damnsec.com/tags/inclusion/</guid>
       <description></description>
     </item>
   </channel>

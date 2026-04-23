@@ -7,8 +7,7 @@ tags:
   - cybersecurity
   - tech
   - hacking
-  - linux
-  - windows
+  - inclusion
 author: 0xDamian
 cover:
   image: /blog/Hate-Less-Hack-More/banner.jpg
