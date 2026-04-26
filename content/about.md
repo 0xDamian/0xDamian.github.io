@@ -14,7 +14,7 @@ In addition, I am an educator and an ex Instructor at the [CyBlack](https://twit
 
 ## Independent Security Researcher
 ### _Self-employed_
-_Remote, United Kingdom_ | _May. 2024 — Oct. 2024_
+_Remote, United Kingdom_ | _May. 2024 — Present_
 
 - Conducting ongoing vulnerability research across web applications, APIs, and open source software with the goal of responsible CVE disclosure. 
 - Performing manual code audits and black-box testing on open source projects, focusing on authentication flaws, insecure deserialisation, and injection vulnerabilities
